@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp">
+
+
+
+    <ImageButton
+        android:id="@+id/pin_drop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_pin_drop"
+        android:layout_marginRight="8dp"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="20dp"
+        android:background="@drawable/incoming_chat"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/Time"
+        android:text="11:40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_drop"
+        app:layout_constraintRight_toLeftOf="@+id/pin_drop" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

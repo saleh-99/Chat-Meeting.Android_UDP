@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252728"
+    tools:context=".MainActivity">
+
+
+
+
+
+    <TextView
+        android:id="@+id/text_Dark"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/pixer"
+        android:text="@string/dark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textSize="80sp"
+        />
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/b"
+        android:background="#00FFFFFF"
+        android:layout_toEndOf="@id/text_Dark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        />
+
+
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_below="@id/text_Dark"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#353636"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:drawableStart="@drawable/ic_name"
+        android:drawablePadding="10dp"
+        android:paddingStart="10dp"
+        />
+
+
+    <EditText
+        android:id="@+id/Port"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/Name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="#353636"
+        android:drawableStart="@drawable/ic_groub_id"
+        android:drawablePadding="10dp"
+        android:hint=" ID_Number"
+        android:inputType="number"
+        android:paddingStart="10dp" />
+
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="114dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/Port"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/rounded_corners"
+        android:text="Go"
+        android:layout_alignParentRight="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000" />
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/a"
+        android:background="#00FFFFFF"
+        android:layout_below="@id/login"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        />
+
+
+
+</RelativeLayout>
